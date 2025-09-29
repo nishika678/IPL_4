@@ -4,7 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.wecp.progressive.repository.MatchRepository;
+<<<<<<< HEAD
 import com.wecp.progressive.repository.TicketBookingRepository;
+=======
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 import com.wecp.progressive.service.MatchService;
 import com.wecp.progressive.entity.*;
 import com.wecp.progressive.exception.NoMatchesFoundException;
@@ -17,6 +20,10 @@ import java.util.*;
 public class MatchServiceImplJpa implements MatchService
 {
     private MatchRepository matchRepository;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
     @Autowired
     public MatchServiceImplJpa(MatchRepository matchRepository) {
         this.matchRepository = matchRepository;
@@ -56,7 +63,11 @@ public class MatchServiceImplJpa implements MatchService
 
     public void deleteMatch(int matchId) throws SQLException
     {
+<<<<<<< HEAD
     matchRepository.deleteById(matchId);
+=======
+        matchRepository.deleteById(matchId);
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
     }
 
     @Override

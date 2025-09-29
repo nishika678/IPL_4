@@ -1,5 +1,6 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -71,5 +72,8 @@ public Match getMatch() {
 public void setMatch(Match match) {
     this.match = match;
 }
+=======
+public class TicketBooking {
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 
 }

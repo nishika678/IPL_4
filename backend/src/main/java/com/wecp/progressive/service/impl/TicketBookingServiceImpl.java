@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Optional;
 
@@ -30,4 +31,8 @@ public class TicketBookingServiceImpl  implements TicketBookingService{
 public List<TicketBooking> getBookingsByUserEmail(String email){
     return ticketBookingRepository.findByEmail(email);
 }
+=======
+public class TicketBookingServiceImpl  {
+
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 }

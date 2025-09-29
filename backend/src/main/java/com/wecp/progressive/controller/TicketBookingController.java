@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.TicketBooking;
+<<<<<<< HEAD
 import com.wecp.progressive.repository.TicketBookingRepository;
 import com.wecp.progressive.service.TicketBookingService;
 import com.wecp.progressive.service.impl.TicketBookingServiceImpl;
@@ -58,4 +59,27 @@ public  ResponseEntity<?> handleException(SQLException sqlex){
         return new ResponseEntity<>(ticketBookingService.getBookingsByUserEmail(email),HttpStatus.OK);
     
 }
+=======
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
+
+public class TicketBookingController {
+
+    public ResponseEntity<List<TicketBooking>> getAllBookings() {
+        return null;
+    }
+
+    public ResponseEntity<Integer> createBooking(TicketBooking ticketBooking) {
+        return null;
+    }
+
+    public ResponseEntity<Void> cancelBooking(int bookingId) {
+        return null;
+    }
+
+    public ResponseEntity<List<TicketBooking>> getBookingsByUserEmail(String email) {
+        return null;
+    }
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 }

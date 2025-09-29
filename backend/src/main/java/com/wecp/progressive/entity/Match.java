@@ -1,8 +1,12 @@
 package com.wecp.progressive.entity;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+=======
+import java.util.Date;
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -10,7 +14,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+<<<<<<< HEAD
 import javax.persistence.OneToMany;
+=======
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -36,6 +43,7 @@ public class Match
     @ManyToOne(cascade = CascadeType.MERGE)
     @JsonIgnore
     private Team team;
+<<<<<<< HEAD
     @OneToMany(mappedBy = "match",cascade=CascadeType.ALL)
     @JsonIgnore
     private List<TicketBooking> ticketBookings=new ArrayList<>();
@@ -66,6 +74,36 @@ public class Match
     //     this.status = status;
     //     this.winnerTeamId = winnerTeamId;
     // }
+=======
+
+    public Match() {
+    }
+
+    public Match(int firstTeamId, int secondTeamId, Date matchDate, String venue, String result, String status,
+            int winnerTeamId) {
+        this.firstTeamId = firstTeamId;
+        this.secondTeamId = secondTeamId;
+        this.matchDate = matchDate;
+        this.venue = venue;
+        this.result = result;
+        this.status = status;
+        this.winnerTeamId = winnerTeamId;
+    }
+
+
+
+    public Match(int matchId, int firstTeamId, int secondTeamId, Date matchDate, String venue, String result,
+            String status, int winnerTeamId) {
+        this.matchId = matchId;
+        this.firstTeamId = firstTeamId;
+        this.secondTeamId = secondTeamId;
+        this.matchDate = matchDate;
+        this.venue = venue;
+        this.result = result;
+        this.status = status;
+        this.winnerTeamId = winnerTeamId;
+    }
+>>>>>>> 6e71d0a7cea40b4733e76d59923d1584d967e0e3
 
 
     public int getMatchId() {
