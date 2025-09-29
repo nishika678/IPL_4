@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run frontend server",
+      "command": "stop-server.sh 3000 && cd frontend && npm run start",
+      "type": "shell"
+    },
+    {
+          "label": "Run backend server",
+          "command": "stop-server.sh 5000 && cd backend && mvn spring-boot:run -Dspring-boot.run.jvmArguments=\"-Xmx750m\" -DskipTests",
+          "type": "shell"
+    },
+    {
+          "label": "Submit App",
+          "command": "./resolv.sh",
+          "type": "shell"
+      },
+  ]
+}
